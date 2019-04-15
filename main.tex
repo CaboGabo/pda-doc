@@ -1,0 +1,78 @@
+\documentclass[letterpaper,12pt,oneside]{book}
+\usepackage[top=1in, left=1.25in, right=1.25in, bottom=1in]{geometry}
+\usepackage{bachelorstitlepageIPN}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Comparto una plantilla para la PORTADA que us\'e en mi t\'esis
+% basada en el dise\~no gen\'erico que se usa en la Facultad de Ciencias
+% Para usarlo \'unicamente aseg\'urate de tener la l\'inea
+% \usepackage{bachelorstitlepageIPN} y el archivo bachelorstitlepageIPN.sty en el mismo directorio de trabajo.
+% y los campos (sin signo %) :
+%\author{Nombre del Alumno}
+%\title{T\'itulo de la tesis}
+%\faculty{Facultad}
+%\degree{Grado que obtienes}
+%\supervisor{ Tutor}
+%\cityandyear{Ciudad y anio}
+%\logouni{nombredelescudodelaunamsinespacios}
+%\logofac{NombreDeLaImagenDelEscudodeTuFacultadSinEspacios}
+% Para sugerencias y comentarios: DM en twitter.com/sglvgdor
+% Subir\'e mas adelante la plantilla para maestr\'ia
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\author{Huitr\'on Rizo Gabriel Alejandro\\Osornio D\'iaz Emiliano\\Trejo Granados Yahir}
+\title{Ingenier\'ia en Sistemas Computacionales}
+\faculty{Escuela Superior De C\'omputo}
+\degree{Aplicaci\'on m\'ovil y web para el apoyo a la identificaci\'on de posibles indicios de depresi\'on, de tipo grave o persistente, en los alumnos de ESCOM}
+\supervisor{L\'opez Rojas Ariel\\Tania Sarabia}
+\cityandyear{Ciudad de M\'exico, 13 de mayo de 2019}
+\logouni{logo_ipn}
+\logofac{logo_escom}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish,es-nodecimaldot,es-tabla]{babel}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage[Sonny]{fncychap}
+\usepackage{appendix}
+
+\graphicspath{{./figs/}}
+\usepackage{setspace}
+%\usepackage[round]{natbib}
+
+\begin{document}
+\frontmatter
+\maketitle
+
+\tableofcontents
+\listoffigures
+\listoftables
+    
+\mainmatter
+
+\include{Introduccion/introduccion}
+\include{Marco/marco}
+\include{Analisis/analisis}
+\include{Diseno/diseno}
+\include{Conclusiones/conclusiones}
+\include{Futuro/futuro}
+\include{Anexos/anexos}
+
+
+% No sé como poner la bibliografía en otro doc :'v
+ % Como se puede ver en \cite{Baz} ... %%% EJEMPLO CITAS
+\cleardoublepage
+\providecommand\phantomsection{}
+\addcontentsline{toc}{chapter}{Bibliografía}
+
+\begin{thebibliography}{10} %
+    \bibitem{Baz} \textsc{Bazaraa, M.S., J.J. Jarvis} y \textsc{H.D. Sherali},\textit{Programaci\'on lineal y flujo en redes}, segunda edici\'on,Limusa, M\'exico, DF, 2004. %%%% EJEMPLO
+\end{thebibliography}
+
+%%%%%%%%%%%%%%% FIN BIBLIOGRAFIA
+
+%\bibliographystyle{humannat}
+%\bibliography{references}
+
+\backmatter%@sglvgdor
+\end{document}
